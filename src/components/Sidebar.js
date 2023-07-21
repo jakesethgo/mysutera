@@ -1,10 +1,5 @@
 import React, { useState } from 'react';
 import {
-  UploadOutlined,
-  UserOutlined,
-  VideoCameraOutlined,
-} from '@ant-design/icons';
-import {
     RiMenuFill,
     RiMenuFoldLine,
     RiDashboardFill,
@@ -65,14 +60,14 @@ const Sidebar = () => {
         <Link to="/mywork">My Work</Link>
         </Menu.Item>
         <SubMenu key="4" icon={<RiFolderOpenFill />} title="Projects">
-          <Menu.Item key="4-1">Bulk</Menu.Item>
-          <Menu.Item key="4-2">Individual</Menu.Item>
+          <Menu.Item key="4-1"><Link to="/bulk">Bulk</Link></Menu.Item>
+          <Menu.Item key="4-2"><Link to="/individual">Individual</Link></Menu.Item>
         </SubMenu>
         <Menu.Item key="5" icon={<RiMoneyDollarCircleFill />}>
-          Normal Sales
+        <Link to="/normalsales">Normal Sales</Link>
         </Menu.Item>
         <Menu.Item key="6" icon={<RiFileList3Fill />}>
-          Product List
+        <Link to="/product">Product List</Link>
         </Menu.Item>
       </Menu>
       </Sider>
